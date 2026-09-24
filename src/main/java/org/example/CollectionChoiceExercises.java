@@ -6,10 +6,15 @@ package org.example;
 //
 // You do not need to populate this array or add any additional code.
 // If you get stuck, refer to the java basics 4 (arrays and collections) curriculum
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.HashSet;
+
 public class CollectionChoiceExercises {
     public void MakeColorCollection() {
         // EXAMPLE:
         // Create an appropriate variable for holding a collection
+        String[] Colors = {"Red", "Green", "Blue"};
         // of three strings that are known ahead of time to be "Red", "Green" and "Blue"
         // and will not change during program execution.
 
@@ -19,6 +24,10 @@ public class CollectionChoiceExercises {
     public void MakeStudentCollection() {
         // Create an appropriate collection variable for holding a list of student names
         // that will be added to and removed from during program execution.
+        ArrayList<String> names = new ArrayList<>();
+        names.add("Vinu");
+        names.add("Rekha");
+        names.remove(1);
     }
 
     public void MakeLoggedInUsersCollection() {
@@ -26,11 +35,18 @@ public class CollectionChoiceExercises {
         // unique logged in usernames where adding a username that's already
         // present is ignored and checking if a user is in the collection can
         // be done very quickly.
+        HashSet<String> usernames = new HashSet<>();
+        usernames.add("test");
+        usernames.add("FakeUserName");
+        usernames.add("test");
     }
 
     public void MakeEmployeeAccessCodesCollection() {
         // Create an appropriate collection variable for holding a set of
         // key-value pairs where they key is an employee name (String) and the
         // value is an employee access code (String.)
+        HashMap<String, String> employees = new HashMap<String, String>();
+        employees.put("Kirthi", "Welcome");
+        employees.put("Meagan", "Hello");
     }
 }
